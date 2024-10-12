@@ -1,0 +1,48 @@
+<div class="mt-3">
+  <!-- <button (click)="online()" class="btn btn-danger">Show List</button> -->
+</div>
+<p>{{ deleteMessage }}</p>
+<div class="mt-3">
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Actions</th>
+        <th> color
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of productlist">
+        <td>
+          <img src="{{ item.photo }}" style="height: 150px; width: 150px" />
+        </td>
+        <td style="color: blueviolet;">
+          {{ item.name }}
+        </td>
+        <!-- <td>
+            {{item.price}}
+        </td> -->
+        <td>
+          {{ item.description }}
+        </td>
+        <td>
+          {{item.color}}
+        </td>
+        <td>
+          <fa-icon
+            (click)="deleteProduct(item.id)"
+            [icon]="icon"
+            style="padding-right: 20px;cursor:pointer;"
+          ></fa-icon>
+          <a routerLink="/update/{{item.id}}"><fa-icon [icon]="editicon"></fa-icon></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<router-outlet>
+    
+</router-outlet>

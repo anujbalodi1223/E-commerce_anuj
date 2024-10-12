@@ -1,0 +1,33 @@
+<nav class="nav">
+    <h1 routerLink="Home" class="logo" style="cursor: pointer;">E-comm</h1>
+    <div *ngIf="menutype === 'default' || menutype === 'user'" class="nav-search">
+      <input #searchinput type="text" (keyup)="search($event)" (blur)="hidesearch()" placeholder="Search for products" />
+      <button (click)="submitsearch(searchinput.value)">Search</button>
+    </div>
+    <div [ngSwitch]="menutype">
+      <ul *ngSwitchCase="'default'" class="nav-links">
+        <li><a routerLink="Home">Home</a></li>
+        <li><a routerLink="Seller-auth">Seller</a></li>
+        <li><a routerLink="user-auth">User Sign Up / Login</a></li>
+        <li><a href="#">Cart({{Cartitems}})</a></li>
+      </ul>
+      <ul *ngSwitchCase="'user'" class="nav-links">
+        <li><a routerLink="Home">Home</a></li>
+        <li><a (click)="logout()">Logout</a></li>
+        <li><a routerLink="user-auth">{{ username }}</a></li>
+        <li><a [routerLink]="Cartitems < 0 ? null : 'cart-page'">Cart({{Cartitems}})</a></li>
+        <li><a routerLink="myorders">My Orders</a></li>
+      </ul>
+      <ul *ngSwitchCase="'seller'" class="nav-links">
+        <li><a routerLink="add-product">Product Add</a></li>
+        <li><a (click)="logout()">Logout</a></li>
+        <li><a routerLink="productlist">Products List</a></li>
+        <li><a href="#">{{ sellername }}</a></li>
+      </ul>
+    </div>
+    <ul *ngFor="let item of searchresult" class="search-results">
+      <li><a (mousedown)="redirecttodetails(item.id)" style="cursor: pointer;">{{ item.name }}</a></li>
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
+  

@@ -1,0 +1,129 @@
+/* Reset some default styles */
+body, ul, li, h1, h3 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+.cart-page {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 40px auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.cart-page h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #333;
+    font-weight: 700;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.details {
+    flex: 2;
+}
+
+.summary {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.product-item:hover {
+    background-color: #f1f1f1;
+}
+
+.product-image {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-name {
+    display: block;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-price,
+.product-quantity {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.summary h3 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.summary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.summary li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.summary li span {
+    font-weight: 600;
+}

@@ -1,0 +1,29 @@
+<div>
+  <p class="alert alert-success">{{ordermsg}}</p>
+</div>
+<div>
+    <form  class="Form-group" #deleiveryform="ngForm" (ngSubmit)="ordernow(deleiveryform.value)">
+     
+  <h1 style="margin-top: 30px;">Checkout Process</h1>
+  <div>
+    <label style="margin-bottom: 5px;">Email</label>
+    <input type="text" class="form-control" name="Email" ngModel required />
+  </div>
+  <div>
+    <label style="margin-bottom: 5px;">Address</label>
+    <input type="text" class="form-control" name="Address" ngModel required />
+  </div>
+  
+  <div>
+    <label style="margin-bottom: 5px;">Contact Details</label>
+    <input type="text" class="form-control" name="Contactdetails" ngModel required />
+  </div>
+  <div class="mt-3">
+    <button class="btn btn-danger" type="submit" (click)="ordernow">Order now</button>
+  </div>
+  <div class="mt-4">
+    <h3>Total Amount :{{totalprice}} </h3>
+    <h4>Mode of Payment : </h4>
+  </div>
+</form>
+</div>

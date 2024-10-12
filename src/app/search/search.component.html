@@ -1,0 +1,11 @@
+<div *ngIf="!searchresult || searchresult.length === 0" class="no-results">
+    <p>No results found.</p>
+  </div>
+  <div class="row search-item" *ngFor="let item of searchresult">
+    <div class="col-sm-3">
+      <img src="{{ item.photo }}" alt="{{ item.name }}">
+    </div>
+    <p>{{ item.name }}</p>
+    <p>{{ item.description }}</p>
+  </div>
+  

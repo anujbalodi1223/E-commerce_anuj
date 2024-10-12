@@ -1,0 +1,24 @@
+<div class="container mt-5">
+    <h2>Orders Table</h2>
+    <table class="table table-striped table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th>Order Image</th>
+          <th>Order ID</th>
+          <th>Price</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of orderdata">
+          <td><img src="https://www.shutterstock.com/image-vector/shopping-cart-icon-flat-design-260nw-570153007.jpg" width="100" height="100" alt="Order Image"></td>
+          <td>{{item.id}}</td>
+          <td>{{item.totalprice}}</td>
+          <td></td>
+          <td><button class="btn btn-danger mt-4" (click)="cancelorder(item.id)">Cancel Order</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

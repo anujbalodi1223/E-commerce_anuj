@@ -1,0 +1,116 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #8A2BE2; /* Dark Violet */
+    margin: 0;
+    font-size: 40px;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #8A2BE2; /* Dark Violet */
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding: 5px 0;
+}
+
+.nav-links li a:hover {
+    color: #8A2BE2; /* Dark Violet */
+    border-bottom: 2px solid #8A2BE2; /* Dark Violet */
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 150px;
+}
+
+.nav-search input {
+    color: #8A2BE2; /* Dark Violet */
+    border: 1px solid #8A2BE2; /* Dark Violet */
+    height: 35px;
+    padding: 0 10px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.nav-search input:focus {
+    border-color: #8A2BE2; /* Dark Violet */
+}
+
+.nav-search button {
+    border: 1px solid #8A2BE2; /* Dark Violet */
+    background-color: #8A2BE2; /* Dark Violet */
+    color: white;
+    height: 35px;
+    padding: 0 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.nav-search button:hover {
+    background-color: #8A2BE2; /* Dark Violet */
+    border-color: #8A2BE2; /* Dark Violet */
+}
+
+.search-results {
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    z-index: 1000;
+    margin-left: 300px;
+    margin-top: 3px;
+}
+
+.search-results li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-results li:last-child {
+    border-bottom: none;
+}
+
+.search-results li a {
+    color: #8A2BE2; /* Dark Violet */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.search-results li a:hover {
+    color: #8A2BE2; /* Dark Violet */
+}

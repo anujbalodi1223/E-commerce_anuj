@@ -1,0 +1,43 @@
+<h1 style="margin-top: 30px;">Seller Auth</h1>
+
+<form *ngIf="!showlogin" class="Form-group" #sellersignup="ngForm" (ngSubmit)="signup(sellersignup.value)">
+    <div>
+        <label style="margin-bottom: 5px;">Name</label>
+        <input type="text"  class="form-control" name="name"  ngModel/>
+    </div>
+<div>
+    <label style="margin-bottom: 5px;">Password</label>
+        <input type="password"  class="form-control" name="password" ngModel/>
+</div>
+<div>
+    <label style="margin-bottom: 5px;">Email</label>
+        <input type="email"  class="form-control" name="email" ngModel/>
+</div>
+<div class="mt-3">
+    <button class="btn btn-danger" type="submit">Submit</button>
+</div>
+</form>
+<div class="mt-3">
+
+<a (click)="login()"  >Already have a account? Login Here </a>
+
+<form  *ngIf="showlogin" class="Form-group mt-3" #sellerlogin="ngForm" (ngSubmit)="loginportal(sellerlogin.value)">
+    <div>
+        <label style="margin-bottom: 5px;">Name</label>
+        <input type="text"  class="form-control" name="game"  ngModel/>
+    </div>
+<div>
+    <label style="margin-bottom: 5px;">Password</label>
+        <input type="password"  class="form-control" name="password" ngModel/>
+</div>
+<!-- <div>
+    <label style="margin-bottom: 5px;">Email</label>
+        <input type="email"  class="form-control" name="email" ngModel/>
+</div> -->
+<div class="mt-3">
+    <button class="btn btn-danger" type="submit">Submit</button>
+</div>
+<div>
+    <a (click)="login2()">New Seller ? Wanna sign up</a>
+</div>
+</form>

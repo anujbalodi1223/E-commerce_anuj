@@ -1,0 +1,132 @@
+{
+  "seller": [
+    {
+      "id": "20e2"
+    },
+    {
+      "id": "ec16",
+      "name": "Anuj",
+      "password": "anujparkar123",
+      "email": "anujbalodi8@gmail.com"
+    },
+    {
+      "id": "ea71",
+      "name": "Vikas",
+      "password": "anujparkar123",
+      "email": "anujbalodi8@gmail.com"
+    },
+    {
+      "id": "f310",
+      "name": "snuj",
+      "password": "",
+      "email": ""
+    },
+    {
+      "id": "e142",
+      "name": "auth",
+      "password": "",
+      "email": ""
+    },
+    {
+      "id": "2e04",
+      "name": "anuj",
+      "password": "",
+      "email": ""
+    },
+    {
+      "id": "3b31",
+      "name": "anuj",
+      "password": "anujparkar123",
+      "email": ""
+    }
+  ],
+  "Products": [
+    {
+      "name": "Iphone 15 Max",
+      "description": "Latest and the  best ",
+      "price": "150000",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlZ5YohPJWNO7iKsSzhBeglc1xKE6XW-w9qSKDJNItPA&s",
+      "color": "gold",
+      "id": "df3b"
+    },
+    {
+      "id": "1325",
+      "name": "2000 cc David Putra ",
+      "description": "Fastest Bike in the world which minimum speed is 100km/h and max speed is undefined",
+      "price": 1000000000,
+      "photo": "https://i.redd.it/cjw8e1eloo0d1.jpeg",
+      "color": "Orange"
+    }
+  ],
+  "users": [
+    {
+      "id": "1371",
+      "name": "Anuj Balodi",
+      "password": "anujparkar123",
+      "email": "anujbalodi8@gmail.com"
+    },
+    {
+      "id": "babd",
+      "name": "Anuj Balodi",
+      "password": "Anujparkar123@",
+      "email": "anujbalodi8@gmail.com"
+    }
+  ],
+  "cart": [
+    {
+      "id": "284f",
+      "name": "krookodile ",
+      "description": "One of coolest poekmon as well as accessories ",
+      "price": "25000",
+      "photo": "https://assets.pokemon.com/assets/cms2/img/pokedex/full//553.png",
+      "color": "red",
+      "quantity": 1,
+      "userid": "1371",
+      "productid": "86d6"
+    },
+    {
+      "id": "7671",
+      "name": "Maruti Suzuki",
+      "description": "best after 800",
+      "Price": "productdata?.price",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZptlZlLPxe9UOtl_rsf1fUtv0Xy_WteygH9ofJk2qeA&s",
+      "quantity": 1,
+      "userid": "1371",
+      "productid": "bfa3"
+    },
+    {
+      "id": "0f08",
+      "name": "Lava Flair",
+      "description": "",
+      "price": 250000,
+      "photo": "https://cdn.ndtv.com/tech/lava_flair_p1.jpg",
+      "color": "red",
+      "quantity": 1,
+      "userid": "1371",
+      "productid": "ea19"
+    },
+    {
+      "id": "2e0e",
+      "name": "Micromax A25",
+      "description": "",
+      "price": "25",
+      "photo": "https://www.maxbhi.com/images/detailed/8045/handsfree_audio_jack_flex_cable_for_micromax_a25_by_maxbhi_com_86109_7tfo-0y.jpg",
+      "color": "Black",
+      "quantity": 1,
+      "userid": "1371",
+      "productid": "356a"
+    },
+    {
+      "id": "8563",
+      "name": "2000 cc David Putra ",
+      "description": "Fastest Bike in the world which minimum speed is 100km/h and max speed is undefined",
+      "price": 1000000000,
+      "photo": "https://i.redd.it/cjw8e1eloo0d1.jpeg",
+      "color": "Orange",
+      "quantity": 1,
+      "userid": "babd",
+      "productid": "1325"
+    }
+  ],
+  "orders": []
+}
